@@ -1,0 +1,2 @@
+Tool for backing-up entire YouTube channels.  Uses youtube-dl and curl to download videos to a local (temporary) folder and simultaneously FTP them to a target host.  Modify the parameters at the beginning of 'sync_chan.js' to configure for your channel.
+
