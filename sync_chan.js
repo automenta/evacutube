@@ -44,9 +44,9 @@ function download(list) {
 }
 
 function upload() {
-	var us = 'curl -g -T `ls *.' + videoExtension + ' -rt | head -1` ';
+	var us = 'curl -g -T "`ls *.' + videoExtension + ' -rt | head -1`" ';
 	us += 'ftp://' + ftpHost + '/' + ftpPath + '/ --user ' + ftpUser + ':' + ftpPass + ' ';
-	us += '; rm `ls *.' + videoExtension + ' -rt | head -1`\n';
+	us += '; rm "`ls *.' + videoExtension + ' -rt | head -1`"\n';
 
 	fs.writeFileSync('upload.sh', us);
 
